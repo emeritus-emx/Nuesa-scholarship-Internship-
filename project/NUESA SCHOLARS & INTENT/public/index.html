@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>EMX Auction</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function() {
+        try {
+          var nativeAlert = window.alert.bind(window);
+          window.alert = function(msg) {
+            try {
+              if (msg === undefined) return nativeAlert();
+              if (typeof msg === 'object') nativeAlert(JSON.stringify(msg, null, 2));
+              else nativeAlert(String(msg));
+            } catch(e) {
+              nativeAlert(String(msg));
+            }
+          };
+        } catch(e) {}
+      })();
+    </script>
+  </body>
+</html>
+

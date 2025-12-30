@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../public/Image/PD1492774616zAI.jpg") no-repeat center center/cover;
+    min-height: 110hv;
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+ 
+    
+}
+
+body::before{
+  position: fixed;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  top: 0;
+  
+  
+}
+
+a{
+  text-decoration: none;
+ }
+ main {
+  padding-top: 0px; /* Adjust depending on your header height */
+}
+
+
+ header{
+  background: silver;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+  padding: 1rem 0;
+  width: 100%;
+  max-height: content;
+
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  
+ }
+ .container{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+ }
+
+ .container nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+
+ .container nav .logo{
+  color:rgb(8, 8, 51);
+  font-size: 1.4rem;
+  cursor: pointer;
+  text-shadow: 0 0 2px black;
+ }
+ 
+ .container .nav-link li{
+  list-style: none;
+  margin: 0 0.5rem;
+
+ }
+
+ .container .nav-link{
+  display: flex;
+
+ }
+
+ .container ul li a {
+  color: rgb(7, 7, 43);
+  font-size: 1.3rem;
+  padding: 0.6 1rem;
+  display: block;
+  
+ }
+ .container ul li a:hover,
+ .container ul li a.active{
+  color: rgb(62, 61, 71);
+ }
+
+ .icon{
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: none;
+ }
+
+ @media(max-width: 760px){
+  
+  .icon{
+    display: block;
+  }
+  .container .nav-link{
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(161, 161, 167);
+    position: absolute;
+    box-shadow: 0 0 5px white;
+    width: 350px;
+    height: 60vh;
+    top: -800px;
+    right: 0;  
+    z-index: 10;
+    transition:  all 0.4s ease-in;
+  
+  }
+
+  .nav-link.active{
+    top: 10%;
+    transition:  all 0.9s ease-in;
+  }
+ }
+ 
+ .Buton{ 
+  background: none;
+  border: none;
+  color: rgb(7, 7, 43);
+  font-size: 1.3rem ;
+  font-weight: bold;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .Buton:hover{
+  color: rgb(62, 61, 71);
+
+ }
+ .logo{
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+ }
+ .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+
+
+
